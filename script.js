@@ -115,7 +115,7 @@ function gameLoop() {
         pipes[i].collidesWithBird();
     }
 
-    if(score > 9) {
+    if(score > 3) {
         voceGanhou();
     }
     
