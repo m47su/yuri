@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #70c5ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('nuvem.gif');
+    background-position: center; /* Centraliza a imagem */
+
+}
+
+#gameContainer {
+    position: relative;
+}
+
+#gameCanvas {
+    background-color: #fff;
+    display: block;
+    margin: auto;
+}
+
+#startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #ff9900;
+}
+
+.confete {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--confetti-color);
+    border-radius: 50%;
+    animation: cair 4s infinite ease-in-out;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(400px) rotate(720deg);
+    }
+}
