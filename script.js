@@ -138,9 +138,12 @@ function voceGanhou() {
     clearInterval(gameInterval);
     alert("AEEE VOCÊ GANHOU! FELIZ ANIVERSÁRIO :) ");
     setTimeout(() => {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+        const video = document.getElementById("video");
+        video.style.display = "block";
+        video.play();
     }, 3000); 
 }
+
 
 function criarConfetes() {
     const duration = 10 * 1000,
